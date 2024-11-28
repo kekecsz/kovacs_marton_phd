@@ -24,7 +24,7 @@ alpha_tester <- function(n_per_group = NA,
 BFs = pbreplicate(iterations, 
             alpha_tester(n_per_group = 28,
                          rscale = 1,
-                         SMD = 0.1))
+                         SMD = 0))
 
 
 power = sum(BFs<(1/BF_threshold))/length(BFs)
